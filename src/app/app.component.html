@@ -1,0 +1,15 @@
+<app-counter [parentData]="counterLocalValue" (senddata)="printvalue($event)"></app-counter>
+<!--<app-test></app-test>-->
+<h2>pipe test</h2>
+<p>
+  {{ "Lana" | pipeTest: "lowercase" }}
+</p>
+<p>
+  {{ "LANA" | pipeTest: "lowercase" }}
+</p>
+<p>
+  {{ "Lana" | pipeTest: "uppercase" }}
+</p>
+<p>
+  {{ "Lana" | pipeTest: "low" }}
+</p>
